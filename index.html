@@ -19,6 +19,10 @@
             height: 200px;
             margin-right: 20px;
             border-radius: 50%;
+            animation-name: new, rot;
+	    animation-duration: 2s,5s;
+            animation-iteration-count: 1,1;	
+			
         }
 		 header {
             background-color: #85c1e9 ;
@@ -33,12 +37,16 @@
 		h2{
 			color:#85c1e9 ;
 		}
-		.container{
+		.luyanda{
             width: 80%;
             margin: 20px auto;
             background-color: white;
             padding: 20px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	    animation-name: new,rot;
+            animation-duration: 2s,3s;
+            animation-iteration-count:1,1;		
+			
         }
         footer{
         	text-align: center;
@@ -64,6 +72,20 @@
         	cursor: pointer;
         	display: inline-block;
         	margin-top: 10px;
+        }
+	.lulu{
+        	animation-name: new, rot;
+        	animation-duration: 2s,4s;
+        	animation-iteration-count: 1,1;
+
+        }
+        @keyframes new{
+        	from{transform:translate(100px); }
+        }
+        @keyframes rot{
+
+        	100%{transform: rotateX(360deg);}
+
         }	
 	</style>
 </head>
@@ -71,7 +93,7 @@
 	<h1>Mulaudzi Tshilidzi Luyanda's Details.</h1>
 	<p>| Programmer | Tech Enthusiast | IT Student |</p>
 	</header>
-	<div class="container">
+	<div class="luyanda">
 <section class="one">
 	
 		<img src="best.jpg">
